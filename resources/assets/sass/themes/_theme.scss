@@ -1,0 +1,79 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html, body{
+	font-family: 'montserrat', sans-serif;
+	font-weight:400;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position:relative;
+}
+
+a{
+	color:#333333;
+}
+
+ul{
+	margin-bottom:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}
+
+a:hover, a:active, a:focus{
+	text-decoration:none;
+	color:$groen;
+}
+
+.badge{
+	background-color:$groen;
+}
+
+h1{
+	font-size:2em;
+	color:$groen;
+	margin:10px;
+}
+
+h3{
+	font-size:1em;
+	text-transform: uppercase;
+	color:$groen;
+}
+
+strong{
+	color:black;
+}
+
+.upper{
+	color:$lichtgrijs;
+}
+
+.row-centered{
+	text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.red-tag{
+	background-color:$zachtrood;
+}
+
+.blue-tag{
+	background-color:$zachtblauw;
+}
+
+.green-tag{
+	background-color:$groen;
+}

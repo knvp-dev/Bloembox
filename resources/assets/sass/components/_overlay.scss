@@ -1,0 +1,58 @@
+/* OVERLAY */
+
+.loading-overlay{
+    z-index:1;
+    background-color:rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.overlay-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.overlay-body p{
+    text-align:center;
+    color:white;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.overlay-spinner{
+    display: flex;
+    color: $groen;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 30px;
+}
+
+.overlay-header h3{
+    color:white;
+    border-bottom: 5px solid white;
+    padding: 10px;
+}
+
+.overlay-controls a{
+    padding:10px;
+    border:2px solid white;
+    color:white;
+    background-color:transparent;
+}
+
+.overlay-controls a:hover{
+    color:rgba(0,0,0,.8);
+    background-color:white;
+}

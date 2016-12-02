@@ -1,0 +1,62 @@
+.btn-groen{
+	background-color:$groen;
+	padding:10px 14px;
+	color:white;
+	border:2px solid $groen;
+	border-radius:0;
+}
+
+.btn-groen:hover{
+	background-color:white;
+	padding:10px 14px;
+	color:$groen;
+	border:2px solid $groen;
+	border-radius:0;
+
+	&a{
+		color:$groen;
+	}
+}
+
+.btn-goud{
+
+	background-color:$goud;
+	padding:10px;
+	color:white;
+	border:2px solid $goud;
+	border-radius:0;
+}
+
+
+.btn-goud:hover{
+
+	background-color:white;
+	padding:10px;
+	color:$goud;
+	border:2px solid $goud;
+	border-radius:0;
+}
+
+.btn-rood{
+	background-color:$zachtrood;
+	padding:10px 14px;
+	color:white;
+	border:2px solid $zachtrood;
+	border-radius:0;
+}
+
+.btn-rood:hover{
+	background-color:white;
+	padding:10px 14px;
+	color:$zachtrood;
+	border:2px solid $zachtrood;
+	border-radius:0;
+
+	&a{
+		color:$zachtrood;
+	}
+}
+
+.btn-rounded{
+	border-radius:60px!important;
+}

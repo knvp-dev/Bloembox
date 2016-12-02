@@ -1,0 +1,32 @@
+.message-alert{
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    padding: 30px;
+    max-width: 350px;
+    border-radius: 15px;
+    color: white;
+
+    animation: slidein .5s linear;
+}
+
+.alert-error{
+	background-color:$zachtrood;
+}
+
+.alert-success{
+	background-color:$groen;
+}
+
+.CTA{
+        margin: 10px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    position: fixed;
+    border-radius: 7px;
+    background-color: rgba(200,200,200,.6);
+    top: 90px;
+    right: 20px;
+    z-index: 1;
+}

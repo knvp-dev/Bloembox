@@ -1,0 +1,34 @@
+@import "_register.scss";
+
+.account-info{
+	border-left:1px solid #eee;
+}
+
+.account-info-list{
+	min-height:120px;
+}
+
+.sidebar-link{
+	padding:10px;
+	text-transform: uppercase;
+}
+
+.sidebar-link a{
+	color:$textgrijs;
+}
+
+.sidebar-link a:hover{
+	color:$groen;
+}
+
+.sidebar-active a{
+	color:$groen;
+}
+
+.account-info-list li{
+	color:$textgrijs;
+}
+
+.account-edit h5{
+	color:$groen;
+}

@@ -1,0 +1,40 @@
+.delivery-items-list-item{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-bottom:1px solid #ececec;
+}
+
+.delivery-items-list img{
+	padding:10px;
+}
+
+.delivery-item-info{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.delivery-info-status i{
+	font-size: 2em;
+}
+
+.delivery-info-status{
+	display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.delivery-item-selected{
+	background-color:$highlight-grijs;
+}
+
+.not-ok{
+	color: #e0e0e0;
+}
+
+.ok{
+	color: $groen;
+}

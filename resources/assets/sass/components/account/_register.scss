@@ -1,0 +1,16 @@
+.account-form{
+	text-align:center;
+}
+
+.account-form p{
+	color:$lichtgrijs;
+}
+
+
+@media(max-width:991px){
+
+	.account-form-info{
+		display:none;
+	}
+
+}

@@ -1,0 +1,52 @@
+.modal-image img{
+	max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-content{
+	border-radius: 11px;
+}
+
+.content-modal h1{
+	font-size:1.2em;
+	text-align:center;
+}
+
+.flowers-list{
+	margin-top:20px;
+}
+
+.flowers-list li{
+	padding:20px;
+	border-top:1px solid #E3E3E3;
+	margin:0px;
+	align-items: center;
+	border-radius:5px;
+	cursor:pointer;
+	text-align:center;
+}
+
+.flowers-list li:hover{
+	color:$groen;
+}
+
+span.modal-list-item-image img{
+	max-width: 50px;
+    margin-right: 15px;
+}
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity .3s ease;
+}
+
+.modal-container {
+    transition: all .3s ease;
+}

@@ -1,0 +1,62 @@
+.product-card{
+	margin:40px;
+	padding:5px;
+	width:270px;
+	height:100%;
+	text-align:center;
+	position:relative;
+}
+
+.product-card-title h1{
+	font-size:1.2em;
+	color:$groen;
+}
+
+.product-card-title p{
+	color:$lichtgrijs;
+	font-size: .9em;
+}
+
+.product-card-image{
+	width:250px;
+	height:250px;
+}
+
+.add-to-cart-btn{
+	border:2px solid $goud;
+	background-color:$goud;
+	color:white;
+}
+
+.add-to-cart-btn a{
+	display:block;
+	padding:5px;
+	color:white;
+}
+
+.add-to-cart-btn a:hover{
+	display:block;
+	padding:5px;
+	background-color:white;
+	color:$goud;
+}
+
+.product-card-price{
+	position:absolute;
+	padding:5px;
+	color:white;
+	background-color:$groen;
+	font-size:1.2em;
+	top:10px;
+	left:0;
+}
+
+
+.product-card-extra{
+	position: absolute;
+	padding:5px;
+	color:white;
+	font-size:1.2em;
+	top:50px;
+	left:0;
+}
