@@ -29,7 +29,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/account','AccountController@show');
 	Route::get('/account/edit','AccountController@edit');
 	Route::post('/account/update','AccountController@update');
-
+	Route::get('/account/orders', 'AccountController@showOrders');
+	Route::get('/account/order/id', 'AccountController@showOrderDetail');
 });
 
 // CREATE NEW ACCOUNT
@@ -62,3 +63,11 @@ Route::get('/checkout/payment', 'PaymentController@index');
 Route::get('/checkout/payment/create/{payment_id}', 'PaymentController@create');
 Route::post('/checkout/payment/handle', 'PaymentController@handleResponse');
 Route::get('/checkout/success/{order_id}', 'CheckoutController@showSuccess');
+
+// ADMIN
+
+Route::group(['prefix' => 'admin','namespace' => 'admin'], function () {
+    Route::get('orders/open', 'AdminOrdersController@showOpenOrders');
+    Route::get('/orders/completed', 'AdminOrdersController@showCompletedOrders');
+    Route::get('/order/{id}', 'AdminOrdersController@showOrderDetail');
+});

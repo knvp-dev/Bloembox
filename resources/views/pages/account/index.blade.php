@@ -22,7 +22,7 @@
 	
 	<ul>
 		<li class="sidebar-link sidebar-active"><a href="">Mijn gegevens</a></li>
-		<li class="sidebar-link"><a href="">Mijn bestellingen</a></li>
+		<li class="sidebar-link"><a href="/account/orders">Mijn bestellingen</a></li>
 		<li class="sidebar-link"><a href="">Mijn facturen</a></li>
 	</ul>
 

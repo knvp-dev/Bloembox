@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use Auth;
 use App\User;
+use App\Order;
 
 use App\Http\Requests\CreateAccountRequest;
 
@@ -74,6 +75,10 @@ class AccountRepository {
 	public function login($account){
 		Auth::attempt(['email'=>$account->email,'password'=>$account->password]);
 		Auth::login($account);
+	}
+
+	public function getAllOrders(){
+		return Order::whereUserId(Auth::id())->get();
 	}
 
 }

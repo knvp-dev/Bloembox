@@ -8093,6 +8093,15 @@ a:hover, a:active, a:focus {
 .badge {
   background-color: #7DB06B; }
 
+.is-success {
+  background-color: #7DB06B; }
+
+.is-warning {
+  background-color: #CFB53B; }
+
+.is-info {
+  background-color: #71b3ec; }
+
 h1 {
   font-size: 2em;
   color: #7DB06B;
@@ -8262,6 +8271,61 @@ header {
 
 .account-edit h5 {
   color: #7DB06B; }
+
+.orders-list {
+  position: relative;
+  border-left: 5px solid #7db06b; }
+
+.orders-list-item {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  border-left: none;
+  width: 100%; }
+
+.order-item-body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-height: 160px; }
+
+.order-item-info {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: 5%; }
+
+.order-item-image {
+  width: 160px;
+  height: auto;
+  overflow: hidden; }
+
+.order-item-image img {
+  margin: -75px 0 0 -240px; }
+
+.order-item-controls {
+  padding: 10px; }
+
+li.order-price {
+  padding: 10px;
+  background-color: #71b3ec;
+  color: white;
+  position: absolute;
+  font-size: 1.3em;
+  top: 10px; }
 
 .card-selection-img {
   width: 90px;

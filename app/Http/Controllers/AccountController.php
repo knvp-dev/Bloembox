@@ -97,4 +97,9 @@ class AccountController extends Controller
         $accountVerificationState = collect($this->account->verify($email, $confirmation_code));
         return view('pages.account.verify', compact('accountVerificationState'));
     }
+
+    public function showOrders(){
+        $orders = $this->account->getAllOrders();
+        return view('pages.account.orders')->with('orders',$orders);
+    }
 }

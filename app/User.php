@@ -44,4 +44,8 @@ class User extends Authenticatable
         $this->confirmation_code = null;
         $this->save();
     }
+
+    public function getFullName(){
+        return $this->firstname . " " . $this->lastname;
+    }
 }

@@ -33,6 +33,18 @@ a:hover, a:active, a:focus{
 	background-color:$groen;
 }
 
+.is-success{
+	background-color:$groen;
+}
+
+.is-warning{
+	background-color:$goud;
+}
+
+.is-info{
+	background-color:$zachtblauw;
+}
+
 h1{
 	font-size:2em;
 	color:$groen;
