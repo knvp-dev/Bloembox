@@ -19,7 +19,7 @@
 
     <div class="col-md-6">
         
-        <img class="is-medium-image" src="/images/cards/{{ $card->image }}.jpg" alt="">
+        <img class="is-medium-image" src="/images/cards/{{ $card->image }}" alt="">
 
     </div>
 

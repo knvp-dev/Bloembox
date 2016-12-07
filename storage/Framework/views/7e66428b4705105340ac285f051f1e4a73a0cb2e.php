@@ -17,7 +17,7 @@
 
     <div class="col-md-6">
         
-        <img class="is-medium-image" src="/images/cards/<?php echo e($card->image); ?>.jpg" alt="">
+        <img class="is-medium-image" src="/images/cards/<?php echo e($card->image); ?>" alt="">
 
     </div>
 

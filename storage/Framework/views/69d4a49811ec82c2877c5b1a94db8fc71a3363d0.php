@@ -23,7 +23,7 @@
 
 			<div class="product-card col-md-3 col-centered">
 				<a href="/products/<?php echo e($product->product_type); ?>/<?php echo e($product->slug); ?>">
-					<img src="/images/products/<?php echo e($product->image); ?>.jpg" alt="boeket" class="product-card-image">
+					<img src="/images/products/<?php echo e($product->image); ?>" alt="boeket" class="product-card-image">
 				</a>
 				<div class="product-card-title">
 					<a href="/products/<?php echo e($product->product_type); ?>/<?php echo e($product->slug); ?>"><h1><?php echo e($product->name); ?></h1></a>

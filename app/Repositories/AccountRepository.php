@@ -78,7 +78,7 @@ class AccountRepository {
 	}
 
 	public function getAllOrders(){
-		return Order::whereUserId(Auth::id())->get();
+		return Order::whereUserId(Auth::id())->orderBy('created_at','DESC')->get();
 	}
 
 }

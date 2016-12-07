@@ -8181,6 +8181,13 @@ header {
     display: none !important; } }
 
 /*END MENU RESPONSIVE*/
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #eee;
+  padding: 20px;
+  margin-top: 50px; }
+
 .products-grid h1 {
   text-align: center; }
 

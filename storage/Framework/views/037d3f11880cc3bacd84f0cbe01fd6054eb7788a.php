@@ -19,8 +19,8 @@
 <div class="sidebar col-md-4 account-sidebar">
 	
 	<ul>
-		<li class="sidebar-link"><a href="">Mijn gegevens</a></li>
-		<li class="sidebar-link sidebar-active"><a href="">Mijn bestellingen</a></li>
+		<li class="sidebar-link"><a href="/account">Mijn gegevens</a></li>
+		<li class="sidebar-link sidebar-active"><a href="/account/orders">Mijn bestellingen</a></li>
 		<li class="sidebar-link"><a href="">Mijn facturen</a></li>
 	</ul>
 
@@ -39,9 +39,9 @@
 			<div class="order-item-body">
 				<div class="order-item-image">
 					<?php if($orderitem->product_id == 1): ?>
-					<img src="/images/products/<?php echo e($orderitem->product->image); ?>.jpg" alt="">
+					<img src="/images/products/<?php echo e($orderitem->product->image); ?>" alt="">
 					<?php else: ?>
-					<img src="/images/cards/<?php echo e($orderitem->product->image); ?>.jpg" alt="">
+					<img src="/images/cards/<?php echo e($orderitem->product->image); ?>" alt="">
 					<?php endif; ?>
 				</div>
 				<div class="order-item-info">

@@ -24,8 +24,8 @@
 		<?php foreach($cards as $card): ?>
 
 			<div class="product-card col-md-3 col-centered">
-				<a href="/images/cards/<?php echo e($card->image); ?>.jpg" data-lity>
-					<img src="/images/cards/<?php echo e($card->image); ?>.jpg" alt="" class="product-card-image">
+				<a href="/images/cards/<?php echo e($card->image); ?>" data-lity>
+					<img src="/images/cards/<?php echo e($card->image); ?>" alt="" class="product-card-image">
 				</a>
 				<div class="product-card-title">
 					<a href="#"><h1><?php echo e($card->name); ?></h1></a>
@@ -35,9 +35,11 @@
 					€<?php echo e($card->priceInEuros()); ?>
 
 				</div>
+				<?php if($card->flag == 1): ?>
 				<div class="product-card-extra blue-tag">
 					Populair!
 				</div>
+				<?php endif; ?>
 				<div class="add-to-cart-btn">
 					<a href="/card/<?php echo e($card->id); ?>/customization/<?php echo e($flowers_row_id); ?>"><i class="fa fa-shopping-cart"></i>
 					Toevoegen aan boeket</a>

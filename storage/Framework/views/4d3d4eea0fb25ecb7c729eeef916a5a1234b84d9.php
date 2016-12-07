@@ -14,7 +14,7 @@
         
         <?php foreach(Cart::content() as $cartitem): ?>
           <li class="clearfix cart-item">
-            <img class="cart-img" src="/images/products/<?php echo e($cartitem->id); ?>.jpg" />
+            <img class="cart-img" src="/images/products/<?php echo e($cartitem->model->image); ?>" />
             <span class="item-name"><a href="/products/<?php echo e($cartitem->model->product_type); ?>/<?php echo e($cartitem->model->slug); ?>"><?php echo e($cartitem->name); ?></a></span>
             <span class="item-price">€ <?php echo e($cartitem->model->priceInEuros()); ?></span><br>
             <?php if(!$cartitem->options->card): ?>
@@ -29,7 +29,7 @@
 
           <?php if($cartitem->options->card): ?>
             <li class="clearfix cart-item connected-items">
-            <img class="cart-img" src="/images/cards/<?php echo e($cartitem->options->card->image); ?>.jpg" />
+            <img class="cart-img" src="/images/cards/<?php echo e($cartitem->options->card->image); ?>" />
             <span class="item-name"><?php echo e($cartitem->options->card->name); ?></span>
             <span class="item-price">€ <?php echo e(number_format($cartitem->options->card->price / 100, 2)); ?></span><br>
               <span class="item-quantity">

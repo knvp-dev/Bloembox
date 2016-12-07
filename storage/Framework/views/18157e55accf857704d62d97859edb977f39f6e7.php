@@ -66,6 +66,12 @@
 			</div>
 			<div class="col-md-6 sep-top-xs">
 				<div class="form-group">
+					<label for="company_contact" class="upper">Contactpersoon</label>
+					<input id="company_contact" type="text" placeholder="Contactpersoon" name="company_contact" class="form-control  required" value="<?php echo e($account->company_contact); ?>">
+				</div>
+			</div>
+			<div class="col-md-6 sep-top-xs">
+				<div class="form-group">
 					<label for="VAT" class="upper">Ondernemingsnummer</label>
 					<input id="VAT" type="text" placeholder="BTW nr." name="VAT" class="form-control  required" value="<?php echo e($account->VAT); ?>">
 				</div>

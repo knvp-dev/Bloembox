@@ -21,8 +21,8 @@
 <div class="sidebar col-md-4 account-sidebar">
 	
 	<ul>
-		<li class="sidebar-link"><a href="">Mijn gegevens</a></li>
-		<li class="sidebar-link sidebar-active"><a href="">Mijn bestellingen</a></li>
+		<li class="sidebar-link"><a href="/account">Mijn gegevens</a></li>
+		<li class="sidebar-link sidebar-active"><a href="/account/orders">Mijn bestellingen</a></li>
 		<li class="sidebar-link"><a href="">Mijn facturen</a></li>
 	</ul>
 
@@ -41,9 +41,9 @@
 			<div class="order-item-body">
 				<div class="order-item-image">
 					@if($orderitem->product_id == 1)
-					<img src="/images/products/{{ $orderitem->product->image}}.jpg" alt="">
+					<img src="/images/products/{{ $orderitem->product->image}}" alt="">
 					@else
-					<img src="/images/cards/{{ $orderitem->product->image}}.jpg" alt="">
+					<img src="/images/cards/{{ $orderitem->product->image}}" alt="">
 					@endif
 				</div>
 				<div class="order-item-info">

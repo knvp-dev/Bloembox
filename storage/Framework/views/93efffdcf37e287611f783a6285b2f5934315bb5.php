@@ -28,7 +28,7 @@
 
 <?php foreach($orders as $order): ?>
 
-<h3><i class="fa fa-check-o"></i> Order: #<?php echo e($order->id); ?> - geplaatst op: <?php echo e($order->created_at); ?></h3>
+<h3>Bestelling geplaatst op <?php echo e($order->created_at); ?></h3>
 
 <ul class="orders-list is-list">
 		<li class="order-price">€ <?php echo e($order->priceInEuros()); ?></li>
@@ -37,9 +37,9 @@
 			<div class="order-item-body">
 				<div class="order-item-image">
 					<?php if($orderitem->product_id == 1): ?>
-					<img src="/images/products/<?php echo e($orderitem->product->image); ?>.jpg" alt="">
+					<img src="/images/products/<?php echo e($orderitem->product->image); ?>" alt="">
 					<?php else: ?>
-					<img src="/images/cards/<?php echo e($orderitem->product->image); ?>.jpg" alt="">
+					<img src="/images/cards/<?php echo e($orderitem->product->image); ?>" alt="">
 					<?php endif; ?>
 				</div>
 				<div class="order-item-info">

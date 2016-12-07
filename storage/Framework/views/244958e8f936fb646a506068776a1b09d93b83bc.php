@@ -19,7 +19,7 @@
 <div class="sidebar col-md-4 account-sidebar">
 	
 	<ul>
-		<li class="sidebar-link sidebar-active"><a href="">Mijn gegevens</a></li>
+		<li class="sidebar-link sidebar-active"><a href="/account">Mijn gegevens</a></li>
 		<li class="sidebar-link"><a href="/account/orders">Mijn bestellingen</a></li>
 		<li class="sidebar-link"><a href="">Mijn facturen</a></li>
 	</ul>

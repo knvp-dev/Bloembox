@@ -29,12 +29,18 @@
 	<div class="delivery-items-list col-md-3">
 		<ul>
 
-		<h3>Producten</h3>
+		<h3>Bestellingen</h3>
+
+		<hr>
 
 		<?php foreach(Cart::content() as $item): ?>
+
+		<?php if($cart_rowId == $item->rowId): ?>
+		<h3>Geselecteerde bestelling</h3>
+		<?php endif; ?>
 			
 				<li class="delivery-items-list-item <?php if($cart_rowId == $item->rowId): ?> delivery-item-selected <?php endif; ?>">
-					<span><img src="/images/products/<?php echo e($item->model->image); ?>.jpg" class="product-thumbnail" /></span>
+					<span><img src="/images/products/<?php echo e($item->model->image); ?>" class="product-thumbnail" /></span>
 					<div class="delivery-item-info">
 						<span><?php echo e($item->model->name); ?></span>
 					</div>
@@ -46,7 +52,7 @@
 		<?php if($item->options->card): ?>
 
 		<li class="delivery-items-list-item <?php if($cart_rowId == $item->rowId): ?> delivery-item-selected <?php endif; ?>">
-			<span><img src="/images/cards/<?php echo e($item->options->card->image); ?>.jpg" class="product-thumbnail" /></span>
+			<span><img src="/images/cards/<?php echo e($item->options->card->image); ?>" class="product-thumbnail" /></span>
 			<div class="delivery-item-info">
 				<span><?php echo e($item->options->card->name); ?></span>
 			</div>
@@ -121,7 +127,7 @@
 
 		<?php if($cart_rowId != 1): ?>
 		<div class="form-group">
-			<input type="submit" class="btn btn-groen pull-right" value="Ga verder">
+			<input type="submit" class="btn btn-groen pull-right" value="Bestelling plaatsen">
 		</div>
 		<?php endif; ?>
 	</div>

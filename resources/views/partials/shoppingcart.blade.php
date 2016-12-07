@@ -14,7 +14,7 @@
         
         @foreach(Cart::content() as $cartitem)
           <li class="clearfix cart-item">
-            <img class="cart-img" src="/images/products/{{ $cartitem->id }}.jpg" />
+            <img class="cart-img" src="/images/products/{{ $cartitem->model->image }}" />
             <span class="item-name"><a href="/products/{{ $cartitem->model->product_type }}/{{ $cartitem->model->slug }}">{{ $cartitem->name }}</a></span>
             <span class="item-price">€ {{ $cartitem->model->priceInEuros() }}</span><br>
             @if(!$cartitem->options->card)
@@ -29,7 +29,7 @@
 
           @if($cartitem->options->card)
             <li class="clearfix cart-item connected-items">
-            <img class="cart-img" src="/images/cards/{{ $cartitem->options->card->image }}.jpg" />
+            <img class="cart-img" src="/images/cards/{{ $cartitem->options->card->image }}" />
             <span class="item-name">{{ $cartitem->options->card->name }}</span>
             <span class="item-price">€ {{ number_format($cartitem->options->card->price / 100, 2) }}</span><br>
               <span class="item-quantity">

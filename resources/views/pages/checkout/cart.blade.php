@@ -38,7 +38,7 @@
 
 		<li class="cart-overview-item ">
 			
-			<img class="cart-item-image" src="/images/products/{{ $product->model->image }}.jpg">
+			<img class="cart-item-image" src="/images/products/{{ $product->model->image }}">
 			
 			<span class="cart-item-info">
 				<h4 class="cart-item-title"><a href="/products/{{ $product->model->product_type }}/{{ $product->model->slug }}">{{ $product->model->name }}</a></h4>
@@ -71,7 +71,7 @@
 	
 		<li class="cart-overview-item card-cart-item connected-items">
 			
-			<img class="cart-item-image" src="/images/cards/{{ $product->options->card->image }}.jpg">
+			<img class="cart-item-image" src="/images/cards/{{ $product->options->card->image }}">
 			
 			<span class="cart-item-info">
 				<h4 class="cart-item-title">{{ $product->options->card->name }}</h4>

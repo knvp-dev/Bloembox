@@ -25,7 +25,7 @@
 
 			<div class="product-card col-md-3 col-centered">
 				<a href="/products/{{ $product->product_type }}/{{ $product->slug }}">
-					<img src="/images/products/{{ $product->image}}.jpg" alt="boeket" class="product-card-image">
+					<img src="/images/products/{{ $product->image}}" alt="boeket" class="product-card-image">
 				</a>
 				<div class="product-card-title">
 					<a href="/products/{{ $product->product_type }}/{{ $product->slug }}"><h1>{{ $product->name }}</h1></a>

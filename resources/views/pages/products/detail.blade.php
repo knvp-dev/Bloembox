@@ -20,7 +20,7 @@
 	
 	<div class="row">
 		<div class="col-md-4">
-			<img src="/images/products/{{ $product->slug }}.jpg" alt="flowers">
+			<img src="/images/products/{{ $product->image }}" alt="flowers">
 		</div>
 		<div class="col-md-6 col-md-offset-2">
 		<h2 class="has-border-bottom">{{ $product->name }}</h2>

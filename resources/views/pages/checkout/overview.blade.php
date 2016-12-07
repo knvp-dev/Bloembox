@@ -39,9 +39,9 @@
 			<div class="order-item-body">
 				<div class="order-item-image">
 					@if($orderitem->product_id == 1)
-					<img src="/images/products/{{ $orderitem->product->image}}.jpg" alt="">
+					<img src="/images/products/{{ $orderitem->product->image}}" alt="">
 					@else
-					<img src="/images/cards/{{ $orderitem->product->image}}.jpg" alt="">
+					<img src="/images/cards/{{ $orderitem->product->image}}" alt="">
 					@endif
 				</div>
 				<div class="order-item-info">
